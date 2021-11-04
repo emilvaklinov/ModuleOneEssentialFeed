@@ -67,10 +67,18 @@
 				B015C201273464C900251430 /* Assets.xcassets */,
 				B015C203273464C900251430 /* LaunchScreen.storyboard */,
 				B015C206273464C900251430 /* Info.plist */,
+				B015C210273466E300251430 /* Feed Feature */,
+			);
+			path = EssentialFeed;
+			sourceTree = "<group>";
+		};
+		B015C210273466E300251430 /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
 				B015C20C273464E200251430 /* FeedItem.swift */,
 				B015C20E273465C200251430 /* FeedLoader.swift */,
 			);
-			path = EssentialFeed;
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
