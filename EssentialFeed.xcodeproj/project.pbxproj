@@ -124,9 +124,17 @@
 		B015C22027394E8500251430 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
-				B015C22127394EA700251430 /* RemoteFeedLoader.swift */,
+				B02E75FC273EF58E00D723B9 /* Feed API */,
 				B02E75F8273EE86100D723B9 /* HTTPClient.swift */,
 				B02E75FA273EE93A00D723B9 /* FeedItemsMapper.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		B02E75FC273EF58E00D723B9 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				B015C22127394EA700251430 /* RemoteFeedLoader.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
