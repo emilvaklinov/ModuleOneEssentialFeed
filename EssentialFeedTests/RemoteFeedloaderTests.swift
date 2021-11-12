@@ -121,7 +121,7 @@ class RemoteFeedloaderTests: XCTestCase {
         let json = ["items": items]
         return try! JSONSerialization.data(withJSONObject: json)
     }
-    private func expect(_ sut: RemoteFeedLoader, toCompleteWith result: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
+    private func expect(_ sut: RemoteFeedLoader, toCompleteWith result: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
         var captureResults = [RemoteFeedLoader.Result]()
         sut.load { captureResults.append($0) }
         
