@@ -20,6 +20,7 @@
 		B015C22227394EA700251430 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B015C22127394EA700251430 /* RemoteFeedLoader.swift */; };
 		B02E75F9273EE86100D723B9 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E75F8273EE86100D723B9 /* HTTPClient.swift */; };
 		B02E75FB273EE93A00D723B9 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E75FA273EE93A00D723B9 /* FeedItemsMapper.swift */; };
+		B02E75FE274032FF00D723B9 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E75FD274032FF00D723B9 /* URLSessionHTTPClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B015C22127394EA700251430 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		B02E75F8273EE86100D723B9 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		B02E75FA273EE93A00D723B9 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
+		B02E75FD274032FF00D723B9 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				B015C21727357E7000251430 /* EssentialFeedTests.swift */,
 				B015C21E27358B9100251430 /* RemoteFeedloaderTests.swift */,
+				B02E75FD274032FF00D723B9 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B015C21F27358B9100251430 /* RemoteFeedloaderTests.swift in Sources */,
+				B02E75FE274032FF00D723B9 /* URLSessionHTTPClientTests.swift in Sources */,
 				B015C21827357E7000251430 /* EssentialFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
