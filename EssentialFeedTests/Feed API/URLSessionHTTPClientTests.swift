@@ -40,8 +40,9 @@ class URLSessionHTTPClientTests: XCTestCase {
         let requestError = anyNSError()
         
         let receivedError = resultErrorFor(data: nil, response: nil, error: requestError)
-        
-        XCTAssertEqual(receivedError as NSError?, requestError)
+
+        XCTAssertEqual((receivedError as NSError?)?.domain, requestError.domain)
+        XCTAssertEqual((receivedError as NSError?)?.code, requestError.code)
         
     }
     
@@ -174,7 +175,7 @@ class URLSessionHTTPClientTests: XCTestCase {
         static func stopInterceptingRequests() {
             URLProtocol.unregisterClass(URLProtocolStub.self)
             stub = nil
-            requestObserver = nil
+            URLProtocolStub.requestObserver = nil
         }
         override class func canInit(with request: URLRequest) -> Bool {
             requestObserver?(request)
@@ -199,6 +200,8 @@ class URLSessionHTTPClientTests: XCTestCase {
             client?.urlProtocolDidFinishLoading(self)
         }
         
-        override func stopLoading() {}
+        override func stopLoading() {
+            URLProtocolStub.requestObserver = nil
+        }
     }
 }
